@@ -54,7 +54,9 @@ Built for the **Chrome AI Challenge 2025** - A cutting-edge Chrome extension tha
 
 ## 🎥 Demo Video
 
-[![Watch Demo](https://img.shields.io/badge/▶️-Watch%20Demo-red?style=for-the-badge)](https://youtube.com/your-video-link)
+[![Watch Demo](https://img.shields.io/badge/▶️-Watch%20Demo-red?style=for-the-badge)](https://youtu.be/rD50WIKloaw)
+
+**[▶️ Watch the Full Demo on YouTube](https://youtu.be/rD50WIKloaw)**
 
 ---
 
