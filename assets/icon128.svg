@@ -1,0 +1,17 @@
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="1" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="url(#grad1)"/>
+  <!-- Brain icon made with paths -->
+  <g transform="translate(32, 32)">
+    <circle cx="32" cy="32" r="28" fill="white" opacity="0.9"/>
+    <path d="M32 10 C20 10 10 20 10 32 C10 44 20 54 32 54 C44 54 54 44 54 32 C54 20 44 10 32 10 Z M32 15 C41 15 49 23 49 32 C49 41 41 49 32 49 C23 49 15 41 15 32 C15 23 23 15 32 15 Z" fill="#667eea"/>
+    <circle cx="26" cy="28" r="3" fill="#667eea"/>
+    <circle cx="38" cy="28" r="3" fill="#667eea"/>
+    <path d="M24 38 Q32 42 40 38" stroke="#667eea" stroke-width="2" fill="none"/>
+  </g>
+</svg>

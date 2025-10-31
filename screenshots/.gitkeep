@@ -1,0 +1,16 @@
+# Screenshots
+
+Place screenshots here for README.md
+
+Required screenshots:
+- popup.png - Main interface with AI-grouped tabs
+- focus-mode.png - Focus Mode in action
+- sessions.png - Save and load sessions dialog
+- reminder.png - Reminder modal
+- search.png - Search functionality
+
+You can create these by:
+1. Loading the extension in Chrome
+2. Testing each feature
+3. Taking screenshots
+4. Adding them to this folder

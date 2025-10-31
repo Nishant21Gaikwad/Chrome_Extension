@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "AI Smart Tab Organizer",
+  "version": "1.0.0",
+  "description": "AI-powered tab management with automatic grouping, search, focus mode, and session management",
+  "icons": {
+    "16": "assets/icon16.svg",
+    "48": "assets/icon48.svg",
+    "128": "assets/icon128.svg"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "assets/icon16.svg",
+      "48": "assets/icon48.svg",
+      "128": "assets/icon128.svg"
+    }
+  },
+  "background": {
+    "service_worker": "background/background.js"
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "alarms",
+    "notifications",
+    "tabGroups"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "commands": {
+    "toggle-focus-mode": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "Command+Shift+F"
+      },
+      "description": "Toggle Focus Mode"
+    },
+    "open-popup": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+O",
+        "mac": "Command+Shift+O"
+      },
+      "description": "Open Tab Organizer"
+    }
+  }
+}

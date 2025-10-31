@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Smart Tab Organizer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="app-title">🧠 Smart Tab Organizer</h1>
+      <div class="header-controls">
+        <input type="text" id="searchInput" class="search-bar" placeholder="Search tabs...">
+        <div class="focus-mode-toggle">
+          <label class="toggle-label">
+            <input type="checkbox" id="focusModeToggle">
+            <span class="toggle-slider"></span>
+            <span class="toggle-text">Focus Mode</span>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <!-- Loading Indicator -->
+    <div id="loadingIndicator" class="loading">
+      <div class="spinner"></div>
+      <p>Analyzing tabs with AI...</p>
+    </div>
+
+    <!-- Tab Groups Container -->
+    <div id="tabGroupsContainer" class="tab-groups-container">
+      <!-- Tab groups will be dynamically inserted here -->
+    </div>
+
+    <!-- Empty State -->
+    <div id="emptyState" class="empty-state" style="display: none;">
+      <p>No tabs found. Open some tabs to get started!</p>
+    </div>
+
+    <!-- Bottom Action Bar -->
+    <footer class="action-bar">
+      <button id="saveSessionBtn" class="action-btn" title="Save current session">
+        💾 Save Session
+      </button>
+      <button id="loadSessionBtn" class="action-btn" title="Load saved session">
+        📂 Load Session
+      </button>
+      <button id="refreshSummariesBtn" class="action-btn" title="Regenerate AI summaries">
+        🔄 Summaries
+      </button>
+      <button id="reminderBtn" class="action-btn" title="Set reminder">
+        ⏰ Reminder
+      </button>
+      <button id="settingsBtn" class="action-btn" title="Settings">
+        ⚙️
+      </button>
+    </footer>
+  </div>
+
+  <!-- Session Modal -->
+  <div id="sessionModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <h2 id="modalTitle">Save Session</h2>
+      <div id="modalBody">
+        <!-- Dynamic content -->
+      </div>
+      <div class="modal-actions">
+        <button id="modalConfirmBtn" class="btn-primary">Confirm</button>
+        <button id="modalCancelBtn" class="btn-secondary">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reminder Modal -->
+  <div id="reminderModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <h2>Set Reminder</h2>
+      <div class="reminder-form">
+        <label for="reminderGroup">Tab Group:</label>
+        <select id="reminderGroup" class="form-control"></select>
+        
+        <label for="reminderTime">Time (minutes from now):</label>
+        <input type="number" id="reminderTime" class="form-control" min="1" value="15">
+        
+        <label for="reminderMessage">Message (optional):</label>
+        <input type="text" id="reminderMessage" class="form-control" placeholder="Check these tabs...">
+      </div>
+      <div class="modal-actions">
+        <button id="reminderConfirmBtn" class="btn-primary">Set Reminder</button>
+        <button id="reminderCancelBtn" class="btn-secondary">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
